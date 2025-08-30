@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>Social Media Dashboard</h1>
+            <div class="theme-switch">
+                <span>Light</span>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider"></span>
+                </label>
+                <span>Dark</span>
+            </div>
+        </header>
+
+        <section class="overview-grid">
+            <div class="metric-card">
+                <div class="card-icon">👥</div>
+                <h3>Followers</h3>
+                <p class="metric-value">12.8K</p>
+                <p class="metric-change positive">+234</p>
+            </div>
+            
+            <div class="metric-card">
+                <div class="card-icon">💬</div>
+                <h3>Engagement</h3>
+                <p class="metric-value">8.2%</p>
+                <p class="metric-change positive">+1.2%</p>
+            </div>
+            
+            <div class="metric-card">
+                <div class="card-icon">📊</div>
+                <h3>Posts</h3>
+                <p class="metric-value">156</p>
+                <p class="metric-change">+12</p>
+            </div>
+            
+            <div class="metric-card">
+                <div class="card-icon">👁️</div>
+                <h3>Reach</h3>
+                <p class="metric-value">45.7K</p>
+                <p class="metric-change positive">+3.1K</p>
+            </div>
+        </section>
+
+        <!-- Charts Section -->
+        <section class="charts-grid">
+            <div class="chart-card">
+                <h3>Followers Growth</h3>
+                <canvas id="followersChart"></canvas>
+            </div>
+            
+            <div class="chart-card">
+                <h3>Engagement Rate</h3>
+                <canvas id="engagementChart"></canvas>
+            </div>
+            
+            <div class="chart-card">
+                <h3>Post Performance</h3>
+                <canvas id="postsChart"></canvas>
+            </div>
+            
+            <div class="chart-card">
+                <h3>Audience Demographics</h3>
+                <canvas id="demographicsChart"></canvas>
+            </div>
+        </section>
+
+        <!-- Recent Activity -->
+        <section class="activity-section">
+            <h2>Recent Activity</h2>
+            <div class="activity-list">
+                <div class="activity-item">
+                    <span class="activity-icon">📱</span>
+                    <div class="activity-content">
+                        <p>New post published</p>
+                        <span class="activity-time">2 hours ago</span>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-icon">❤️</span>
+                    <div class="activity-content">
+                        <p>Post reached 1K likes</p>
+                        <span class="activity-time">5 hours ago</span>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-icon">👥</span>
+                    <div class="activity-content">
+                        <p>Gained 50 new followers</p>
+                        <span class="activity-time">Yesterday</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
